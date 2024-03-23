@@ -20,8 +20,6 @@
         {
         }
 
-        // Propriedades públicas
-        public int NumeroConta => _numeroConta;
 
         // Métodos públicos
         public void Depositar(double valor)
