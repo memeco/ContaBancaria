@@ -16,11 +16,8 @@
         }
 
         // Construtor para conta sem depósito inicial
-        public ContaBancaria(int numeroConta, string nomeTitular)
+        public ContaBancaria(int numeroConta, string nomeTitular) : this(numeroConta, nomeTitular, 0)
         {
-            _numeroConta = numeroConta;
-            NomeTitular = nomeTitular;
-            Saldo = 0;
         }
 
         // Propriedades públicas
@@ -48,8 +45,8 @@
         public override string ToString()
         {
             return $"Número da Conta: {_numeroConta}\n" +
-               $"Nome do Titular: {NomeTitular}\n" +
-               $"Saldo: R${Saldo:F2}";
+                $"Nome do Titular: {NomeTitular}\n" +
+                $"Saldo: R${Saldo:F2}";
         }
     }
 }
